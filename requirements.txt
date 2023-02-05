@@ -6,3 +6,4 @@ leafmap==0.15.0
 plotly_express==0.4.1
 streamlit_option_menu==0.3.2
 Image==1.5.33
+numpy==1.24.1
