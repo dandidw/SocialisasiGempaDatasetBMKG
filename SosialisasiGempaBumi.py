@@ -10,7 +10,7 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Sosialisasi Gempa")
 df1 = pd.read_csv("gempagempigisel.csv")
 df = df1.loc[:, ("tanggal", "waktu", "latitude", "longitude", "kedalaman", "magnitudo", "daerah")]
-m = leafmap.Map(location=[ -0.78927, 113.921327], tiles="Cartodb dark_matter", zoom_start=4)
+m = leafmap.Map(location=[ -0.78927, 113.921327], google_map="HYBRID", zoom_start=4)
 jml_gempa = df['daerah'].unique()
 all = np.append(jml_gempa,['Tampilkan Semua'])
 contact_options = all
